@@ -20,4 +20,11 @@ class IPFizzBuzzTest extends TestCase
     {
         $this->assertEquals("Fizz", $this->ipFizzBuzz->getFizzBuzzByIP("127.0.0.3"));
     }
-}
+
+    /**
+     * @test
+     */
+    public function shouldReturnBuzz()
+    {
+        $this->assertEquals("Buzz", $this->ipFizzBuzz->getFizzBuzzByIP("127.0.0.5"));
+    }
